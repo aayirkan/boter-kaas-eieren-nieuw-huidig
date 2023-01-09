@@ -39,7 +39,7 @@ const winningConditions = [
 	[0, 3, 6],
 	[1, 4, 7],
 	[2, 5, 8],
-	[0, 4, 8],	
+	[0, 4, 8],
 	[2, 4, 6],
 ];
 
@@ -49,8 +49,13 @@ function boxClicked(index) {
 
 	// Alleen als het veldje leeg is, dus geen X of O
 	
+	if(field.innerText != "") {
 
-	if(playerOnePlaying) {
+		return;
+	
+	  }
+
+	if (playerOnePlaying) {
 		field.textContent = "X";
 		playerOnePlaying = false;
 	} else {
@@ -58,7 +63,6 @@ function boxClicked(index) {
 		playerOnePlaying = true;
 	}
 }
-
 
 
 
@@ -79,3 +83,4 @@ function myFunction() {
 	playerTwoLabel.innerHTML = 'Player 2:' + playerTwoName + "<br>";
 	playerTwoLabel.innerHTML += 'Score:' + player2Points;
 }
+

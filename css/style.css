@@ -2,11 +2,16 @@ body {
     background-image: url(/achtergrond/boter\ kaas\ en\ eiren.jpg)
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .demo {
     width: 400px;
     height: 400px;
     font-size: 5em;
-    float: left;
+    
     text-align: center;
 }
 
@@ -21,13 +26,13 @@ body {
 }
 
 .demo-rainbow {
-    width: 400px;
-    height: 400px;
+    /* width: 55px; */
+    /* height: 400px; */
     font-size: 5em;
-    float: left;
     text-align: center;
     animation: rainbow 2.5s linear;
     animation-iteration-count: infinite;
+    margin-top: 50px;
     
 }
 
@@ -146,9 +151,9 @@ body {
     width: 385px;
     height: 450px;
     grid-gap: 10px;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-left: 600px;
+
+    margin: auto;
+    margin-top: 100px;
 }
 
 body {
