@@ -48,12 +48,12 @@ function boxClicked(index) {
 	const field = fields[index];
 
 	// Alleen als het veldje leeg is, dus geen X of O
-	
-	if(field.innerText != "") {
+
+	if (field.innerText != "") {
 
 		return;
-	
-	  }
+
+	}
 
 	if (playerOnePlaying) {
 		field.textContent = "X";
@@ -83,4 +83,5 @@ function myFunction() {
 	playerTwoLabel.innerHTML = 'Player 2:' + playerTwoName + "<br>";
 	playerTwoLabel.innerHTML += 'Score:' + player2Points;
 }
+
 

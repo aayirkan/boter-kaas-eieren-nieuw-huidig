@@ -1,5 +1,7 @@
 body {
-    background-image: url(/achtergrond/boter\ kaas\ en\ eiren.jpg)
+    background-image: url(/achtergrond/boter\ kaas\ en\ eiren.jpg);
+    font-family: 'Algerian', cursive;
+    overflow: hidden;
 }
 
 * {
@@ -11,7 +13,6 @@ body {
     width: 400px;
     height: 400px;
     font-size: 5em;
-    
     text-align: center;
 }
 
@@ -34,6 +35,32 @@ body {
     animation-iteration-count: infinite;
     margin-top: 50px;
     
+}
+
+.resetboard{
+    width: 70px;
+    height: 40px;
+    color: black;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    cursor: pointer
+}
+
+.resetName {
+    width: 70px;
+    height: 40px;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.winningtext {
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    visibility: hidden;
 }
 
 
@@ -151,14 +178,10 @@ body {
     width: 385px;
     height: 450px;
     grid-gap: 10px;
-
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
-body {
-    font-family: 'Algerian', cursive;
-}
 
 h1 {
     font-size: 60px;
@@ -186,9 +209,6 @@ h1 {
 
 .div2:hover {
     background-color: gray;
-}
-
-.div2:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
@@ -214,26 +234,9 @@ h1 {
 }
 
 .div3:hover {
-    background-color: gray;
-}
-
-.div3:hover {
     animation: pulse 1s infinite;
     transition: .3s;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    background-color: grey;
 }
 
 .div4 {
@@ -244,25 +247,8 @@ h1 {
 
 .div4:hover {
     background-color: gray;
-}
-
-.div4:hover {
     animation: pulse 1s infinite;
     transition: .3s;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }
 
 .div6 {
@@ -273,27 +259,9 @@ h1 {
 
 .div6:hover {
     background-color: gray;
-}
-
-.div6:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 
 .div7 {
     grid-row: 4/7;
@@ -303,27 +271,9 @@ h1 {
 
 .div7:hover {
     background-color: gray;
-}
-
-.div7:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
 
 .div8 {
     grid-row: 4/7;
@@ -333,28 +283,9 @@ h1 {
 
 .div8:hover {
     background-color: gray;
-}
-
-.div8:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
 
 .div9 {
     grid-row: 7/10;
@@ -365,29 +296,9 @@ h1 {
 
 .div9:hover {
     background-color: gray;
-}
-
-.div9:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-
 
 .div10 {
     grid-row: 7/10;
@@ -398,29 +309,9 @@ h1 {
 
 .div10:hover {
     background-color: gray;
-}
-
-.div10:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-
 
 .div11 {
     grid-row: 7/10;
@@ -431,23 +322,7 @@ h1 {
 
 .div11:hover {
     background-color: gray;
-}
-
-.div11:hover {
     animation: pulse 1s infinite;
     transition: .3s;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
