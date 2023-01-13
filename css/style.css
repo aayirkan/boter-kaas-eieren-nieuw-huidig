@@ -29,6 +29,7 @@ body {
     width: 400px;
     height: 400px;
     font-size: 5em;
+    margin-left: 750px;
     text-align: center;
 }
 
@@ -36,6 +37,7 @@ body {
     animation: rainbow-bg 2.5s linear;
     animation-iteration-count: infinite;
 }
+
 
 .rainbow {
     animation: rainbow 2.5s linear;
