@@ -40,7 +40,7 @@ console.log("fields: " + fields.length);
 
 // loop nu door fields en zet in elke div een X
 
-for (let i = 0; i < fields.length; i++) {
+for (let i = 0; i < fields.length; i++) { //i++ is +1
 	const field = fields[i];
 
 	console.log(field);
@@ -80,7 +80,7 @@ function checkWinner(currentPlayer) {
 		let nThree = array[2];
 
 		if (playfieldArray[nOne] == currentPlayer && playfieldArray[nTwo] == currentPlayer && playfieldArray[nThree] == currentPlayer) {
-			alert(currentPlayer + " wint!");
+			alert(currentPlayer + " wint! Druk op reset board om de game te resetten.");
 			gameEnded = true;
 
 		}

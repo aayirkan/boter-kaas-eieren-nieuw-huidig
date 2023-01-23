@@ -6,7 +6,6 @@
 body {
     background-image: url(/achtergrond/boter\ kaas\ en\ eiren.jpg);
     font-family: 'Algerian', cursive;
-    /* overflow: hidden; */
 }
 
 .player1{
@@ -45,8 +44,6 @@ body {
 }
 
 .demo-rainbow {
-    /* width: 55px; */
-    /* height: 400px; */
     font-size: 5em;
     text-align: center;
     animation: rainbow 2.5s linear;
@@ -192,7 +189,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: repeat(12, 40px);
-    /* padding: 10px; */
     width: 385px;
     height: 450px;
     grid-gap: 10px;
