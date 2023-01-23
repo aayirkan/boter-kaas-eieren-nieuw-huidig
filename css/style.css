@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(/achtergrond/boter\ kaas\ en\ eiren.jpg);
     font-family: 'Algerian', cursive;
@@ -7,7 +12,7 @@ body {
 .player1{
     width: 250px;
     height: 150px;
-    background-color: blueviolet;
+    background-color: white;
     float: left;
     font-size: 30px;
 }
@@ -15,21 +20,16 @@ body {
 .player2 {
     width: 250px;
     height: 150px;
-    background-color: red;
+    background-color: greenyellow;
     float: right;
     font-size: 30px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .demo {
     width: 400px;
-    height: 400px;
+    height: 250px;
     font-size: 5em;
-    margin-left: 750px;
+    margin-left: 550px;
     text-align: center;
 }
 

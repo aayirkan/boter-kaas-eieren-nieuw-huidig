@@ -12,6 +12,7 @@ function resetBoard() {
 	}
 	currentPlayer = "X"; // Start with X
 	playfieldArray = [false, false, false, false, false, false, false, false, false];
+	location.reload()
 }
 
 const resetButton = document.querySelector(".resetBoard"); //A button to reset the game
@@ -22,8 +23,8 @@ const playerTwoLabel = document.querySelector('.player2');
 
 let player1Points = "X";
 let player2Points = "O";
-let playerOneName = "";
-let playerTwoName = "";
+// let playerOneName = "";
+// let playerTwoName = "";
 let currentPlayer = "X";
 let gameEnded = false;
 
@@ -57,7 +58,7 @@ for (let i = 0; i < fields.length; i++) {
 
 function checkWinner(currentPlayer) {
 
-    let winningConditions = [
+	let winningConditions = [
 		[0, 1, 2],// First horizontal row
 		[3, 4, 5],// Second horizontal row
 		[6, 7, 8],// Third horizontal row
@@ -66,14 +67,14 @@ function checkWinner(currentPlayer) {
 		[2, 5, 8],// Third vertical row
 		[0, 4, 8],// First diagonal row
 		[2, 4, 6],// Second diagonal row
-]
+	]
 
 
 
-    for (let i = 0; i < winningConditions.length; i++) {
+	for (let i = 0; i < winningConditions.length; i++) {
 		let matchCounter = 0;
 
-		
+
 		const firstSymbol = fields[winningConditions[i][0]].textContent;
 
 		const array = winningConditions[i];
@@ -86,7 +87,7 @@ function checkWinner(currentPlayer) {
 			alert(currentPlayer + " wint!");
 			gameEnded = true;
 
-        }
+		}
 	}
 }
 
@@ -149,7 +150,7 @@ function boxClicked(index) {
 
 function changePlayer() {
 
-    currentPlayer = "X"
+	currentPlayer = "X"
 
 }
 
@@ -158,19 +159,19 @@ function changePlayer() {
 
 function myFunction() {
 
-    playerOneName = prompt(' in wat wil je Speler 1 naam veranderen');
+	playerOneName = prompt(' in wat wil je Speler 1 naam veranderen');
 
-    playerOneLabel.innerHTML = 'Player 1:' + playerOneName + "<br>";
+	playerOneLabel.innerHTML = 'Player 1:' + playerOneName + "<br>";
 
-    playerOneLabel.innerHTML += 'Symbol:' + player1symbol;
+	playerOneLabel.innerHTML += 'Symbol:' + player1symbol;
 
 
 
-    playerTwoName = prompt('in wat wil je Speler 2 naam veranderen');
+	playerTwoName = prompt('in wat wil je Speler 2 naam veranderen');
 
-    playerTwoLabel.innerHTML = 'Player 2:' + playerTwoName + "<br>";
+	playerTwoLabel.innerHTML = 'Player 2:' + playerTwoName + "<br>";
 
-    playerTwoLabel.innerHTML += 'Symbol:' + player2symbol;
+	playerTwoLabel.innerHTML += 'Symbol:' + player2symbol;
 
 }
 
