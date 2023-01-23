@@ -11,7 +11,7 @@ function resetBoard() {
 		tile.innerHTML = "";
 	}
 	currentPlayer = "X"; // Start with X
-	playfieldArray = [false, false, false, false, false, false, false, false, false];
+	playfieldArray = [false, false, false, false, false, false, false, false, false]; //dit zorgt ervoor dat het bord leeg begint
 	location.reload()
 }
 
@@ -23,8 +23,7 @@ const playerTwoLabel = document.querySelector('.player2');
 
 let player1Points = "X";
 let player2Points = "O";
-// let playerOneName = "";
-// let playerTwoName = "";
+
 let currentPlayer = "X";
 let gameEnded = false;
 
@@ -32,9 +31,6 @@ let playerTurn = 1;
 
 let playfieldArray = [false, false, false, false, false, false, false, false, false];
 
-
-// let playerOne = prompt("Wat is de naam van speler 1?")
-// let playerTwo = prompt("Wat is de naam van speler 2?")
 
 // Haal met queryselectorAll alle div's met de class 'box'
 // op en stop die in een variable
@@ -127,35 +123,11 @@ function boxClicked(index) {
 	}
 }
 
-
-
-
-// playerOneName = prompt(' in wat wil je Speler 1 naam veranderen');
-// playerOneLabel.innerHTML = 'Player 1:' + playerOneName + "<br>";
-// playerOneLabel.innerHTML += 'Score:'+ player1Points;
-
-// playerTwoName = prompt('in wat wil je Speler 2 naam veranderen');
-// playerTwoLabel.innerHTML = 'Player 2:' + playerTwoName + "<br>";
-// playerTwoLabel.innerHTML += 'Score:'+ player2Points;
-
-// function myFunction() {
-// 	playerOneName = prompt(`Wat word de nieuwe naam van ${playerOne}?`);
-// 	playerOneLabel.innerHTML = 'Player 1:' + playerOneName + "<br>";
-// 	playerOneLabel.innerHTML += 'Score:' + player1Points;
-
-// 	playerTwoName = prompt(`Wat word de nieuwe naam van ${playerTwo}?`)
-// 	playerTwoLabel.innerHTML = 'Player 2:' + playerTwoName + "<br>";
-// 	playerTwoLabel.innerHTML += 'Score:' + player2Points;
-// }
-
 function changePlayer() {
 
 	currentPlayer = "X"
 
 }
-
-
-
 
 function myFunction() {
 
